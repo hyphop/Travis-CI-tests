@@ -9,18 +9,30 @@ echo "[i] ansi"
 ./miZy.color.logo.ascii
 
 echo "[i] sys info"
+echo "=="
 uname -a
+echo "=="
+env
+echo "=="
 free
+echo "=="
 cat /proc/cmdline
+echo "=="
 cat /proc/cpuinfo
+echo "=="
 cat /proc/mounts
+echo "=="
 
+jspp=`which json_pp`
+[ "$jspp" ] || jspp=cat
+
+curl -s ifconfig.co/json | $jspp
+echo "=="
 ifconfig
+echo "=="
 route
 
-ping -c1 ai-radio.org
+echo "[i] OK"
 
-
-
-
-
+sync
+ls -l1 $0.log

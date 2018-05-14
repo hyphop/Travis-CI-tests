@@ -7,6 +7,7 @@
 
 echo=/bin/echo
 
+echo "[i] must be colored! "
 $echo -e "
 \e[35m
                          
