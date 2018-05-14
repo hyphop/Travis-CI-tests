@@ -1,2 +1,2 @@
-language: sh
+language: c
 script:  sudo ./build_test
