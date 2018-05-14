@@ -1,0 +1,26 @@
+#!/bin/sh
+
+echo "[i] ascii"
+
+cat miZy.logo.ascii
+
+echo "[i] ansi"
+
+./miZy.color.logo.ascii
+
+echo "[i] sys info"
+uname -a
+free
+cat /proc/cmdline
+cat /proc/cpuinfo
+cat /proc/mounts
+
+ifconfig
+route
+
+ping -c1 ai-radio.org
+
+
+
+
+
